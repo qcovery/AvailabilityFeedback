@@ -1,0 +1,12 @@
+{
+    "name": "qcovery/availability-feedback",
+    "description": "Add a contact form to the availability info in VuFind",
+    "type": "qcovery-module",
+    "require": {
+        "php": ">=7.3",
+        "qcovery/vufind-composer-installer-plugin": "*"
+    },
+    "extra": {
+        "moduleName": "AvailabilityFeedback"
+    }
+}
