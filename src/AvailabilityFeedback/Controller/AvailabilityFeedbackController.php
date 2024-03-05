@@ -103,7 +103,7 @@ class AvailabilityFeedbackController extends \VuFind\Controller\AbstractBase
         $view->comments = $this->params()->fromPost('comments');
 
         $view->hideForm = false;
-        if ($this->formWasSubmitted('submit', $view->useRecaptcha)) {
+        if ($this->formWasSubmitted('submit', $view->useCaptcha)) {
             if (empty($view->userEmail)) {
                 $this->flashMessenger()->addMessage('bulk_error_missing', 'error');
                 return;
